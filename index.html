@@ -41,6 +41,10 @@
             text-align: center;
         }
 
+        .job-desc-text {
+            line-height: 1.5;
+        }
+
         @media screen and (max-width: 480px) {
             header {
                 text-align: center;
@@ -69,10 +73,26 @@
 
     <p>Welcome to my personal home page, much more to come here soon!</p>
 
-    <p>My Experience</p> 
-    <ul>
-        <li>Application Developer Intern (May 2023 - Present) | McKee Foods Corporation</li>
-    </ul>
+    <div style="width: 55%">
+        <p>My Experience</p> 
+        <ul>
+            <li>Application Developer Intern (May 2023 - Present) | McKee Foods Corporation Collegedale, TN
+                 <ul>
+                    <li class="job-desc-text">
+                         Rewriting an internal tool used to track items used by hundreds of employees in food production. Full stack app with WPF front-end and back-end REST API written with the .NET framework connected to an SQL Server database. Designed the architecture for the project and database with input from manager.
+                    </li>
+                    <li class="job-desc-text">
+                         Coordinated with an agile team to rewrite an app for McKee distributors to manage their stores. Full stack app with React front end, and back end written with the .NET framework.
+                    </li>
+                </ul>
+            </li>
+            <li>Student Finance Assistant (September 2021 - May 2023) | Southern Adventist University Collegedale, TN
+                <ul>
+                    <li>Answered phone calls and returned voicemails relating to financial aid inquiries.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
 
     <p>Education</p>
     <ul>
@@ -81,11 +101,10 @@
 
     <p>My Projects:</p>
     <ul>
-        <li>Visualization of Memory Management (Svelte)</li>
-        <li>Event manager webapp (Express.js, Prisma, React, Axios)</li>
-        <li>Speed multiplayer card game (C#, Godot)</li>
-        <li>Calisthenics Workout webapp (Vue.js)</li>
-        <li>Roman History wiki webapp (C#, ASP.NET)</li>
+        <li><a href="./projects/segvis.html">Visualization of Memory Management (Svelte)</a></li>
+        <li><a href="./projects/eventmanager.html">Event manager webapp (Express.js, Prisma, React, Axios)</a></li>
+        <li><a href="./projects/speedtcp.html">Speed multiplayer card game (C#/Go, Godot)</a></li>
+        <li><a href="./projects/cardsapp.html">Calisthenics Workout webapp (Vue.js)</a></li>
     </ul>
 </body>
 </html>
