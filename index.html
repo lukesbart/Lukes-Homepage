@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,7 +21,7 @@
         }
 
         .header-img-container {
-            width:fit-content;
+            width: fit-content;
         }
 
         .social-icon {
@@ -29,6 +30,10 @@
 
         .linkedin {
             color: #0072b1;
+        }
+
+        .pdf {
+            color: #ff3333;
         }
 
         .headshot {
@@ -45,11 +50,15 @@
             line-height: 1.5;
         }
 
+        .section-head {
+            font-weight: bold;
+        }
+
         @media screen and (max-width: 480px) {
             header {
                 text-align: center;
             }
-            
+
             .header-img-container {
                 width: auto;
             }
@@ -62,6 +71,7 @@
         }
     </style>
 </head>
+
 <body>
     <header>
         <h1>Luke Bartholomew</h1>
@@ -72,23 +82,28 @@
             <p class="text-center">
                 <a href="https://github.com/lukesbart" class="icon-link"><i class="bi-github social-icon"></i></a>
                 <a href="https://www.linkedin.com/in/luke-s-bartholomew/" class="icon-link"><i class="bi-linkedin linkedin social-icon"></i></a>
+                <a href="./assets/Luke Bartholomew Resume.pdf"><i class="bi bi-file-earmark-pdf-fill social-icon pdf"></i></a>
             </p>
         </div>
     </header>
 
 
-    <p>Welcome to my personal home page, much more to come here soon!</p>
+    <!-- <p>Welcome to my personal home page, much more to come here soon!</p> -->
 
     <div class="description-section">
-        <p>My Experience</p> 
+        <p class="section-head">My Experience</p>
         <ul>
             <li>Application Developer Intern (May 2023 - Present) | McKee Foods Corporation Collegedale, TN
-                 <ul>
+                <ul>
                     <li class="job-desc-text">
-                         Rewriting an internal tool used to track items used by hundreds of employees in food production. Full stack app with WPF front-end and back-end REST API written with the .NET framework connected to an SQL Server database. Designed the architecture for the project and database with input from manager.
+                        Rewriting an internal tool used to track items used by hundreds of employees in food production.
+                        Full stack app with WPF front-end and back-end REST API written with the .NET framework
+                        connected to an SQL Server database. Designed the architecture for the project and database with
+                        input from manager.
                     </li>
                     <li class="job-desc-text">
-                         Coordinated with an agile team to rewrite an app for McKee distributors to manage their stores. Full stack app with React front end, and back end written with the .NET framework.
+                        Coordinated with an agile team to rewrite an app for McKee distributors to manage their stores.
+                        Full stack app with React front end, and back end written with the .NET framework.
                     </li>
                 </ul>
             </li>
@@ -100,17 +115,21 @@
         </ul>
     </div>
 
-    <p>Education</p>
+    <p class="section-head">Education</p>
     <ul>
-        <li>Bachelor's of Science in Computer Science (Expected May 2024) | Southern Adventist University</li>
+        <li>Bachelor's of Science in Computer Science (May 2024. GPA: 3.30) | Southern Adventist University</li>
     </ul>
 
-    <p>My Projects:</p>
-    <ul>
+    <p class="section-head">My Projects:</p>
+    <ul style="line-height: 1.5;">
+        <li><a href="./projects/webreader.html">Web reader mode in terminal (Go) (In Progress)</a></li>
+        <li><a href="./projects/homeassistant.html">Home Assistant (ChatGPT and Arduino) (In Progress)</a></li>
+        <li><a href="https://github.com/lukesbart/Lukes-Homepage">Repository for this website</a></li>
         <li><a href="./projects/segvis.html">Visualization of Memory Management (Svelte)</a></li>
         <li><a href="./projects/eventmanager.html">Event manager webapp (Express.js, Prisma, React, Axios)</a></li>
         <li><a href="./projects/speedtcp.html">Speed multiplayer card game (C#/Go, Godot)</a></li>
         <li><a href="./projects/cardsapp.html">Calisthenics Workout webapp (Vue.js)</a></li>
     </ul>
 </body>
+
 </html>
